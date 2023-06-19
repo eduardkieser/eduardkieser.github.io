@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>EduardKieser.io - Developing Countries</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">EduardKieser.io</a></h1>
+                <nav><ul>
+                    <li><a href="/category/future-project.html">Future Project</a></li>
+                    <li><a href="/category/past-projects.html">Past Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/ICU-Monitor-OCR-Recorder.html">ICU Monitor OCR Recorder: Bridging The Gap in ICU Monitoring</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-06-19T00:00:00+02:00">
+                Published: Mon 19 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/healthcare.html">Healthcare</a> <a href="/tag/icu.html">ICU</a> <a href="/tag/ocr.html">OCR</a> <a href="/tag/monitor.html">Monitor</a> <a href="/tag/developing-countries.html">Developing Countries</a> </p>
+</footer><!-- /.post-info --><p><strong>Introduction</strong>
+Healthcare in developing countries often lags due to obsolete technology and a lack of resources. One such critical area is Intensive Care Units (ICU), where there's an urgent need to upgrade the system of data logging from monitors. Current systems depend heavily on manual inputs, leading to a significant waste of valuable nursing time and a higher chance of error. This post presents my journey of building a solution to this issue: the ICU Monitor OCR Recorder.</p>
+<p><strong>Identifying the Issue</strong>
+Across developing nations, data from ICU monitors often go unrecorded and un-stored. The primary reasons for this include the presence of outdated ICU models from various vendors and each vendor's attempt to establish a closed-off ecosystem. Moreover, the cost of streaming and storing data in such systems can be exorbitantly high. </p>
+<p>These factors contribute to a critical yet under-recognized problem. Nurses, already stretched thin in the developing world, spend up to a quarter of their shift manually recording data from each ICU monitor. This is a wasteful use of resources, considering that there's a direct correlation between nurse shortage and higher mortality.</p>
+<p><strong>Developing the Solution</strong>
+To counter this issue, I developed an Optical Character Recognition (OCR) tool to read and log data from ICU monitors. This tool, based on camera technology, is positioned in front of the monitor to continuously record the screen. The user annotates each data point (Heart Rate, Respiratory Rate, Photoplethysmogram, Temperature, etc.), after which each region of interest is cropped and sent to an image classification model.</p>
+<p>The image classification model was built using a modified ResNet 50 developed with TensorFlow. It was designed to return a value between 0 and 999 for each region of interest at 1Hz. To speed up the process and provide a hands-on solution, I designed the first proof of concept (POC) as a smartphone app, which I developed using Flutter after becoming proficient in Dart within a few weeks.</p>
+<p><strong>Testing the Solution</strong>
+The POC was tested in a clinical setting, garnering positive feedback from both doctors and nurses. It helped to streamline their work, minimizing time spent on manual data recording and improving accuracy.</p>
+<p><strong>Challenges and Future</strong>
+In the pursuit of funding to elevate the project from POC to a full-scale company, I teamed up with the tech transfer office at my university. As the first step, they filed a patent on my behalf. However, this move ended up being a stumbling block for the project's development.</p>
+<p>Fortunately, the patent was only filed in South Africa (South African Patent 2018/04931), so others outside the country are welcome to explore this technology. A professor in the US is currently seeking funding to pursue this concept further, and I can provide contact details for interested parties.</p>
+<p><strong>Conclusion</strong>
+My ICU Monitor OCR Recorder was an attempt to bridge a gap in the healthcare sector of developing nations. It's a testament to how machine learning and simple technological solutions can improve existing systems. I encourage those interested in furthering this project to reach out and continue the journey.</p>
+<hr>
+<p>Does this meet your expectations, Eduard?</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

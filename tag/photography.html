@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>EduardKieser.io - Photography</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">EduardKieser.io</a></h1>
+                <nav><ul>
+                    <li><a href="/category/future-project.html">Future Project</a></li>
+                    <li><a href="/category/past-projects.html">Past Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/Ilse-App-Mosaic-Art.html">Crafting Personal Memories: The Ilse App for Real Mosaic Art</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-06-25T00:00:00+02:00">
+                Published: Sun 25 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/photography.html">Photography</a> <a href="/tag/mosaic-art.html">Mosaic Art</a> </p>
+</footer><!-- /.post-info --><p><img alt="&quot;(for obvious reasons) A screen shot of one of the ouputs, Ilse on the left, myself on the right&quot;" src="images/ilse_app.jpg"></p>
+<p>A few years ago, as I set out to create a special gift for my wife, I stumbled upon an interesting concept: a mosaic print, with each tile representing a snapshot of our life together. Yet, my search for tools to accomplish this revealed a glaring shortcoming – most of the available options merely desaturated the small tiles and overlaid them with the larger image. This approach felt less authentic, more like artificially coloring the mosaic than allowing the original hues of our memories to shine through.</p>
+<p>I was left unsatisfied, and, fuelled by a blend of annoyance and inspiration, I decided to build my own solution. The tool, which came to be known as the "Ilse App," was designed to respect the genuine colors of each picture, ultimately crafting a true mosaic.</p>
+<p>The idea was simple in principle, yet challenging in execution. I divided the main canvas into <code>n*m</code> tiles (typically with <code>n</code> and <code>m</code> around 20 to 30). Each tile was further subdivided into <code>x*x</code> sub-frames, usually between 2 and 4. For each sub-frame, the app extracted the average RGB (Red, Green, Blue) values. With <code>x=2</code>, for instance, this would result in a vector of length <code>2^2*3</code> describing each tile.</p>
+<p>Next, I downloaded and indexed my entire Apple and Google photo libraries in the same way. For each tile on the main canvas, the app searched for the image whose RGB vector had the smallest L2 distance to the tile's vector. That image was then placed in the corresponding position on the canvas. </p>
+<p>Performing this process for every tile resulted in a large image composed entirely of different, unedited pictures. The result was a mosaic that was not only aesthetically pleasing but also deeply personal. Every tile in the mosaic was a moment from our life, depicted in its original color and brightness.</p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

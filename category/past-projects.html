@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>EduardKieser.io - Past Projects</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">EduardKieser.io</a></h1>
+                <nav><ul>
+                    <li><a href="/category/future-project.html">Future Project</a></li>
+                    <li class="active"><a href="/category/past-projects.html">Past Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/QSynch-Camera-Synchronization.html">QSynch: A QR-Code Based Solution for Camera Stream Synchronization</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-07-05T00:00:00+02:00">
+                Published: Wed 05 July 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/flutter.html">Flutter</a> <a href="/tag/camera.html">Camera</a> <a href="/tag/synchronization.html">Synchronization</a> <a href="/tag/qr-code.html">QR Code</a> </p>
+</footer><!-- /.post-info --><p>In the field of videography, one often encounters the need to synchronize multiple camera streams. This requirement becomes even more crucial when we have numerous GoPros strapped to a drone, each capturing a unique perspective. Traditionally, synchronizing these different feeds in post-processing has been a laborious task, requiring meticulous manual effort. To mitigate this challenge, I developed 'QSynch' - a Flutter app that simplifies the synchronization process.</p>
+<p>The concept behind QSynch is straightforward. It leverages QR codes to embed timestamp information directly into the video stream. The app displays the current UTC timestamp as a QR code on the screen, and the operator presents this to each camera before and after a filming session. This action imprints a timestamp onto the video feed, which can be automatically detected and utilized during post-processing to align the various video streams accurately.</p>
+<p>The gif below shows two versions of the app running on my laptop. On the left we encode only the time stamp, in the right we have a version of the app that lets you define an arbitrary amount of key value pairs, that also get embedded into the video stream, this is part of my never ending battle against clip boards in the field. </p>
+<p><img alt="QSynch timestamp only left, timestamp and meta data right" src="/images/qsynch.gif"></p>
+<p>This pre-and-post session timestamping also offers another advantage - it allows us to compensate for any time drift that might occur during filming. With traditional methods, a slight drift in the internal clocks of different cameras can lead to synchronization issues over a long shooting period. With QSynch, since the time is logged at both the start and end, any such drift can be accounted for and adjusted in post-processing.</p>
+<p>The QSynch app is quick and efficient, with its performance mostly limited by the frame-rate of the cameras involved. It offers a solution that not only simplifies the task of video synchronization but also enhances the precision of the process.</p>
+<p>In summary, QSynch exemplifies how a straightforward solution can tackle a complex problem. By integrating QR codes with Flutter, the app provides an elegant, automatic method to ensure accurate synchronization across multiple camera streams. As someone who often explores the intersection of technology and creativity, developing QSynch was an incredibly rewarding experience, highlighting the potential that such cross-disciplinary applications can hold.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Flikker-Game-of-Life.html" rel="bookmark"
+                           title="Permalink to Flikker: Bringing Conway's Game of Life to Flutter">Flikker: Bringing Conway's Game of Life to Flutter</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-30T00:00:00+02:00">
+                Published: Fri 30 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/eduard.html">Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/flutter.html">Flutter</a> <a href="/tag/game-of-life.html">Game of Life</a> </p>
+</footer><!-- /.post-info -->                <p>As a software engineer, I frequently enjoy experimenting with new technologies. One such exploration led me to Flutter, a UI toolkit from Google that promises fast, beautiful, and natively compiled applications. Intrigued by the potential, I initiated a project, christened 'Flikker', with a specific goal: to test the speed at …</p>
+                <a class="readmore" href="/Flikker-Game-of-Life.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Ilse-App-Mosaic-Art.html" rel="bookmark"
+                           title="Permalink to Crafting Personal Memories: The Ilse App for Real Mosaic Art">Crafting Personal Memories: The Ilse App for Real Mosaic Art</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-25T00:00:00+02:00">
+                Published: Sun 25 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/photography.html">Photography</a> <a href="/tag/mosaic-art.html">Mosaic Art</a> </p>
+</footer><!-- /.post-info -->                <p><img alt="&quot;(for obvious reasons) A screen shot of one of the ouputs, Ilse on the left, myself on the right&quot;" src="images/ilse_app.jpg"></p>
+<p>A few years ago, as I set out to create a special gift for my wife, I stumbled upon an interesting concept: a mosaic print, with each tile representing a snapshot of our life together. Yet, my search for tools to accomplish this revealed a glaring shortcoming – most of the …</p>
+                <a class="readmore" href="/Ilse-App-Mosaic-Art.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/couch-defender-app.html" rel="bookmark"
+                           title="Permalink to "Couch Defender: An App to Keep Pets Off Your Furniture"">"Couch Defender: An App to Keep Pets Off Your Furniture"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-20T00:00:00+02:00">
+                Published: Tue 20 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/flutter.html">Flutter</a> <a href="/tag/mobile-development.html">Mobile Development</a> <a href="/tag/object-detection.html">Object Detection</a> </p>
+</footer><!-- /.post-info -->                <p>Protect your furniture with the help of a spare smartphone and object detection technology.</p>
+                <a class="readmore" href="/couch-defender-app.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ICU-Monitor-OCR-Recorder.html" rel="bookmark"
+                           title="Permalink to ICU Monitor OCR Recorder: Bridging The Gap in ICU Monitoring">ICU Monitor OCR Recorder: Bridging The Gap in ICU Monitoring</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-19T00:00:00+02:00">
+                Published: Mon 19 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/healthcare.html">Healthcare</a> <a href="/tag/icu.html">ICU</a> <a href="/tag/ocr.html">OCR</a> <a href="/tag/monitor.html">Monitor</a> <a href="/tag/developing-countries.html">Developing Countries</a> </p>
+</footer><!-- /.post-info -->                <p>A journey of building a solution to streamline the logging of data from ICU monitors in developing countries, improving the efficiency and accuracy of healthcare services.</p>
+                <a class="readmore" href="/ICU-Monitor-OCR-Recorder.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/rat-motorcycle.html" rel="bookmark"
+                           title="Permalink to The Rat Motorcycle">The Rat Motorcycle</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-12T10:20:00+02:00">
+                Published: Mon 12 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt.html">ChatGPT</a>
+                        <a class="url fn" href="/author/eduard.html">Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/diy.html">DIY</a> <a href="/tag/sander.html">sander</a> <a href="/tag/robotics.html">robotics</a> <a href="/tag/bldc.html">bldc</a> <a href="/tag/belt-sander.html">belt sander</a> </p>
+</footer><!-- /.post-info -->                <p>DIY cordless belt sander</p>
+                <a class="readmore" href="/rat-motorcycle.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
