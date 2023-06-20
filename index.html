@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Pelican" />
-        <title>Home</title>
+        <title>EduardKieser.io</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
 </head>
 
@@ -13,19 +13,196 @@
                 <h1><a href="/">EduardKieser.io</a></h1>
                 <nav><ul>
                     <li><a href="/pages/about.html">About</a></li>
-                    <li class="active"><a href="//">Home</a></li>
+                    <li><a href="/pages/home.html">Home</a></li>
                     <li><a href="/category/future-project.html">Future Project</a></li>
                     <li><a href="/category/past-projects.html">Past Projects</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-<section id="content" class="body">
-    <h1 class="entry-title">Home</h1>
-    
-    <h1>Eduard Kieser's Home Page</h1>
-<p>This is a space where I share some past projects and ideas for future ones. Some of it is hardware sone is software. Most of the code for these can be found either on <a href="github.com/eduardkieser">github</a> or <a href="bitbucket.org/EduardKieser">bitbucket</a>. You are welcome to look around there, but most of these were never intended to be shared with the world, so don't judge. My plan is to clean up and add readme's, if I get the time, but chances are I will not.</p>
-<p>Extended Disclaimer. I'm a lazy person, so most of the blog posts were written by everyone's favorite little language model, so if the prose is too flowery, verbose or it makes me seem more full of it than I really am, we blame the bot. I usually pass a cursory glance over everything I publish here, but if any inaccuracies slip by, I do apologize. With that out the way.</p>
-<p>Feedback can be sent directly to me at eduardkieser@gmail.com</p>
-</section>
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/Triage-Cardiology-Patients-Wearable-ECG.html">Triage-ing Cardiology Patients: A Model Based on Wearable ECG Data</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-07-22T00:00:00+02:00">
+                Published: Sat 22 July 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/future-project.html">Future Project</a>.</p>
+<p>tags: <a href="/tag/cardiology.html">Cardiology</a> <a href="/tag/ecg.html">ECG</a> <a href="/tag/wearable-technology.html">Wearable Technology</a> <a href="/tag/patient-triage.html">Patient Triage</a> <a href="/tag/healthcare-technology.html">Healthcare Technology</a> </p>
+</footer><!-- /.post-info --><p>The diagnosis and treatment of cardiac conditions often involve complex and time-consuming procedures. Certain types of arrhythmias and abnormal heartbeats may only surface a few times per day and under specific circumstances, making them difficult to detect in a timely manner. Early diagnosis is crucial for the successful treatment of these conditions, yet current methods struggle to identify the subtle signs of early-stage diseases.</p>
+<p>One of the shortcomings of current practices is the use of short-duration, high-quality ECG recordings, typically lasting between one to twenty-four hours. These multi-channel ECG devices, while providing precise readings, are non-portable, and hence, the recordings are typically made while the patient is at rest. However, some abnormal heart rhythms only become noticeable when the patient is active or under some form of exertion, thus escaping detection by these stationary devices.</p>
+<p>This led me to ponder on a solution that would not only be wearable but also equipped to handle and process large volumes of ECG data. These wearable devices, while suffering from certain downsides like lower channel count and a higher risk of artifact interference, could record ECG data continually and under varying physical conditions. With technological advances, it's possible to filter out the artifacts and retain the meaningful ECG data.</p>
+<p>The biggest challenge is the processing of this data. With weeks' worth of ECG readings, it's not feasible for a cardiologist or technician to review all the data manually. Hence, the need for a model that could automatically triage the ECG data, alerting the medical staff to the sections of interest only.</p>
+<p>As far as I know, no open-source reference standard for this exists. Creating such a model would enable a faster diagnosis process, significantly reducing the time and resources currently invested in sifting through ECG data. If implemented, this technology could transform the field of cardiology by providing a practical, efficient, and patient-friendly solution to the problem of timely and accurate diagnosis.</p>
+<p><img alt="VAE decoder running in matplotlib" src="/images/ecg_vae.gif"></p>
+<p><strong>One potential approach:</strong> I've had the opportunity to look into this a little back in Oct 2019 and found that if you crop a small region (1 or 2 seconds around each beat), so that you have one wavelet per beat and pre-process is appropriately then you can train a VAE with a small number of latent space parameters (5 in my test case) that is able to reproduce most of the features of each beat. More interestingly: if you use some non linear clustering algorithm (I think I used t-SNE) to project the 5D data onto a 2-D image and color the  values by the annotation you will find that each cluster of points is of the same color with less than 5% contamination. This is amazing because it means that the 5 latent space values can be combined to classify the beat pathology. Above is a GIF of the decoder part of the VAE, where one can manually modify the latent space values and see the resulting waveform.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Crowd-Sourced-ECG-Platform.html" rel="bookmark"
+                           title="Permalink to "Crowd" Sourced ECG Platform: A Step Towards More Annotated Data">"Crowd" Sourced ECG Platform: A Step Towards More Annotated Data</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-07-15T00:00:00+02:00">
+                Published: Sat 15 July 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/future-project.html">Future Project</a>.</p>
+<p>tags: <a href="/tag/ecg.html">ECG</a> <a href="/tag/crowd-sourcing.html">Crowd Sourcing</a> <a href="/tag/cardiology.html">Cardiology</a> <a href="/tag/healthcare.html">Healthcare</a> <a href="/tag/data-annotation.html">Data Annotation</a> </p>
+</footer><!-- /.post-info -->                <p>Electrocardiogram (ECG) data is a vital resource in medical research and diagnostics. It offers detailed insight into the functioning of the human heart and can help diagnose numerous cardiac conditions. However, one of the limitations of ECG studies is the scarcity of well-annotated ECG data.</p>
+<p>Envisioning a solution to this …</p>
+                <a class="readmore" href="/Crowd-Sourced-ECG-Platform.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/QSynch-Camera-Synchronization.html" rel="bookmark"
+                           title="Permalink to QSynch: A QR-Code Based Solution for Camera Stream Synchronization">QSynch: A QR-Code Based Solution for Camera Stream Synchronization</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-07-05T00:00:00+02:00">
+                Published: Wed 05 July 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/flutter.html">Flutter</a> <a href="/tag/camera.html">Camera</a> <a href="/tag/synchronization.html">Synchronization</a> <a href="/tag/qr-code.html">QR Code</a> </p>
+</footer><!-- /.post-info -->                <p>In the field of videography, one often encounters the need to synchronize multiple camera streams. This requirement becomes even more crucial when we have numerous GoPros strapped to a drone, each capturing a unique perspective. Traditionally, synchronizing these different feeds in post-processing has been a laborious task, requiring meticulous manual …</p>
+                <a class="readmore" href="/QSynch-Camera-Synchronization.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Flikker-Game-of-Life.html" rel="bookmark"
+                           title="Permalink to Flikker: Bringing Conway's Game of Life to Flutter">Flikker: Bringing Conway's Game of Life to Flutter</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-30T00:00:00+02:00">
+                Published: Fri 30 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/eduard-chatgpt.html">Eduard, ChatGPT</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/flutter.html">Flutter</a> <a href="/tag/game-of-life.html">Game of Life</a> </p>
+</footer><!-- /.post-info -->                <p>As a software engineer, I frequently enjoy experimenting with new technologies. One such exploration led me to Flutter, a UI toolkit from Google that promises fast, beautiful, and natively compiled applications. Intrigued by the potential, I initiated a project, christened 'Flikker', with a specific goal: to test the speed at …</p>
+                <a class="readmore" href="/Flikker-Game-of-Life.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/Ilse-App-Mosaic-Art.html" rel="bookmark"
+                           title="Permalink to Crafting Personal Memories: The Ilse App for Real Mosaic Art">Crafting Personal Memories: The Ilse App for Real Mosaic Art</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-25T00:00:00+02:00">
+                Published: Sun 25 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/app.html">App</a> <a href="/tag/photography.html">Photography</a> <a href="/tag/mosaic-art.html">Mosaic Art</a> </p>
+</footer><!-- /.post-info -->                <p><img alt="&quot;(for obvious reasons) A screen shot of one of the ouputs, Ilse on the left, myself on the right&quot;" src="images/ilse_app.jpg"></p>
+<p>A few years ago, as I set out to create a special gift for my wife, I stumbled upon an interesting concept: a mosaic print, with each tile representing a snapshot of our life together. Yet, my search for tools to accomplish this revealed a glaring shortcoming – most of the …</p>
+                <a class="readmore" href="/Ilse-App-Mosaic-Art.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/couch-defender-app.html" rel="bookmark"
+                           title="Permalink to "Couch Defender: An App to Keep Pets Off Your Furniture"">"Couch Defender: An App to Keep Pets Off Your Furniture"</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-20T00:00:00+02:00">
+                Published: Tue 20 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/flutter.html">Flutter</a> <a href="/tag/mobile-development.html">Mobile Development</a> <a href="/tag/object-detection.html">Object Detection</a> </p>
+</footer><!-- /.post-info -->                <p>Protect your furniture with the help of a spare smartphone and object detection technology.</p>
+                <a class="readmore" href="/couch-defender-app.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/ICU-Monitor-OCR-Recorder.html" rel="bookmark"
+                           title="Permalink to ICU Monitor OCR Recorder: Bridging The Gap in ICU Monitoring">ICU Monitor OCR Recorder: Bridging The Gap in ICU Monitoring</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-19T00:00:00+02:00">
+                Published: Mon 19 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/healthcare.html">Healthcare</a> <a href="/tag/icu.html">ICU</a> <a href="/tag/ocr.html">OCR</a> <a href="/tag/monitor.html">Monitor</a> <a href="/tag/developing-countries.html">Developing Countries</a> </p>
+</footer><!-- /.post-info -->                <p>A journey of building a solution to streamline the logging of data from ICU monitors in developing countries, improving the efficiency and accuracy of healthcare services.</p>
+                <a class="readmore" href="/ICU-Monitor-OCR-Recorder.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/rat-motorcycle.html" rel="bookmark"
+                           title="Permalink to The Rat Motorcycle">The Rat Motorcycle</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2023-06-12T10:20:00+02:00">
+                Published: Mon 12 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/chatgpt.html">ChatGPT</a>
+                        <a class="url fn" href="/author/eduard.html">Eduard</a>
+        </address>
+<p>In <a href="/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="/tag/diy.html">DIY</a> <a href="/tag/sander.html">sander</a> <a href="/tag/robotics.html">robotics</a> <a href="/tag/bldc.html">bldc</a> <a href="/tag/belt-sander.html">belt sander</a> </p>
+</footer><!-- /.post-info -->                <p>DIY cordless belt sander</p>
+                <a class="readmore" href="/rat-motorcycle.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
         </section><!-- /#extras -->
 
