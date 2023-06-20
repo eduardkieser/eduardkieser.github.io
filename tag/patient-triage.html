@@ -12,6 +12,8 @@
         <header id="banner" class="body">
                 <h1><a href="/">EduardKieser.io</a></h1>
                 <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="//">Home</a></li>
                     <li><a href="/category/future-project.html">Future Project</a></li>
                     <li><a href="/category/past-projects.html">Past Projects</a></li>
                 </ul></nav>
@@ -39,23 +41,6 @@
 <p><strong>One potential approach:</strong> I've had the opportunity to look into this a little back in Oct 2019 and found that if you crop a small region (1 or 2 seconds around each beat), so that you have one wavelet per beat and pre-process is appropriately then you can train a VAE with a small number of latent space parameters (5 in my test case) that is able to reproduce most of the features of each beat. More interestingly: if you use some non linear clustering algorithm (I think I used t-SNE) to project the 5D data onto a 2-D image and color the  values by the annotation you will find that each cluster of points is of the same color with less than 5% contamination. This is amazing because it means that the 5 latent space values can be combined to classify the beat pathology. Above is a GIF of the decoder part of the VAE, where one can manually modify the latent space values and see the resulting waveform.</p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">

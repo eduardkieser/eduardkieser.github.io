@@ -12,6 +12,8 @@
         <header id="banner" class="body">
                 <h1><a href="/">EduardKieser.io</a></h1>
                 <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="//">Home</a></li>
                     <li><a href="/category/future-project.html">Future Project</a></li>
                     <li><a href="/category/past-projects.html">Past Projects</a></li>
                 </ul></nav>
@@ -37,35 +39,21 @@ Across developing nations, data from ICU monitors often go unrecorded and un-sto
 <p>These factors contribute to a critical yet under-recognized problem. Nurses, already stretched thin in the developing world, spend up to a quarter of their shift manually recording data from each ICU monitor. This is a wasteful use of resources, considering that there's a direct correlation between nurse shortage and higher mortality.</p>
 <p><strong>Developing the Solution</strong>
 To counter this issue, I developed an Optical Character Recognition (OCR) tool to read and log data from ICU monitors. This tool, based on camera technology, is positioned in front of the monitor to continuously record the screen. The user annotates each data point (Heart Rate, Respiratory Rate, Photoplethysmogram, Temperature, etc.), after which each region of interest is cropped and sent to an image classification model.</p>
+<p><img alt="" src="images/icu_mon_1.jpg"></p>
 <p>The image classification model was built using a modified ResNet 50 developed with TensorFlow. It was designed to return a value between 0 and 999 for each region of interest at 1Hz. To speed up the process and provide a hands-on solution, I designed the first proof of concept (POC) as a smartphone app, which I developed using Flutter after becoming proficient in Dart within a few weeks.</p>
+<p>I was consumed by this project for a long time and there is a lot to talk about, but the bit that might be most interesting from a machine learning perspective (and telling about my personal style) is the data generation. I needed a very big set of annotated pictures of numbers. Ideally these pictures should contain all the artifacts that one should expect from the real world data. To do this I wrote two bits of software, one that generated a series of frames and shoved them into a video file, and one that decoded the same frames from the re-recorded video.
+Each set of number frames was preceded by a marker frame. A marker frame had a bunch of QR codes indicating the location and value of the subsequent numbers. This marker frame was followed by a set of frames that placed the expected numbers at the expected locations.
+<img alt="" src="images/icu_mon_4.png"></p>
 <p><strong>Testing the Solution</strong>
-The POC was tested in a clinical setting, garnering positive feedback from both doctors and nurses. It helped to streamline their work, minimizing time spent on manual data recording and improving accuracy.</p>
+The POC was tested in a clinical setting, garnering positive feedback from both doctors and nurses.
+<img alt="" src="images/icu_mon_2.jpeg"> <img alt="" src="images/icu_mon_3.jpeg"></p>
 <p><strong>Challenges and Future</strong>
 In the pursuit of funding to elevate the project from POC to a full-scale company, I teamed up with the tech transfer office at my university. As the first step, they filed a patent on my behalf. However, this move ended up being a stumbling block for the project's development.</p>
 <p>Fortunately, the patent was only filed in South Africa (South African Patent 2018/04931), so others outside the country are welcome to explore this technology. A professor in the US is currently seeking funding to pursue this concept further, and I can provide contact details for interested parties.</p>
 <p><strong>Conclusion</strong>
-My ICU Monitor OCR Recorder was an attempt to bridge a gap in the healthcare sector of developing nations. It's a testament to how machine learning and simple technological solutions can improve existing systems. I encourage those interested in furthering this project to reach out and continue the journey.</p>
-<hr>
-<p>Does this meet your expectations, Eduard?</p>                </article>
+My ICU Monitor OCR Recorder was an attempt to bridge a gap in the healthcare sector of developing nations. It's a testament to how machine learning and simple technological solutions can improve existing systems. I encourage those interested in furthering this project to reach out and continue the journey.</p>                </article>
             </aside><!-- /#featured -->
         <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">

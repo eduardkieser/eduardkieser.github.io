@@ -12,6 +12,8 @@
         <header id="banner" class="body">
                 <h1><a href="/">EduardKieser.io</a></h1>
                 <nav><ul>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="//">Home</a></li>
                     <li><a href="/category/future-project.html">Future Project</a></li>
                     <li><a href="/category/past-projects.html">Past Projects</a></li>
                 </ul></nav>
@@ -33,7 +35,7 @@
 </footer><!-- /.post-info --><p>In the field of videography, one often encounters the need to synchronize multiple camera streams. This requirement becomes even more crucial when we have numerous GoPros strapped to a drone, each capturing a unique perspective. Traditionally, synchronizing these different feeds in post-processing has been a laborious task, requiring meticulous manual effort. To mitigate this challenge, I developed 'QSynch' - a Flutter app that simplifies the synchronization process.</p>
 <p>The concept behind QSynch is straightforward. It leverages QR codes to embed timestamp information directly into the video stream. The app displays the current UTC timestamp as a QR code on the screen, and the operator presents this to each camera before and after a filming session. This action imprints a timestamp onto the video feed, which can be automatically detected and utilized during post-processing to align the various video streams accurately.</p>
 <p>The gif below shows two versions of the app running on my laptop. On the left we encode only the time stamp, in the right we have a version of the app that lets you define an arbitrary amount of key value pairs, that also get embedded into the video stream, this is part of my never ending battle against clip boards in the field. </p>
-<p><img alt="QSynch timestamp only left, timestamp and meta data right" src="/images/qsynch.gif"></p>
+<p><img alt="QSynch timestamp only left, timestamp and meta data right" src="images/qsynch.gif"></p>
 <p>This pre-and-post session timestamping also offers another advantage - it allows us to compensate for any time drift that might occur during filming. With traditional methods, a slight drift in the internal clocks of different cameras can lead to synchronization issues over a long shooting period. With QSynch, since the time is logged at both the start and end, any such drift can be accounted for and adjusted in post-processing.</p>
 <p>The QSynch app is quick and efficient, with its performance mostly limited by the frame-rate of the cameras involved. It offers a solution that not only simplifies the task of video synchronization but also enhances the precision of the process.</p>
 <p>In summary, QSynch exemplifies how a straightforward solution can tackle a complex problem. By integrating QR codes with Flutter, the app provides an elegant, automatic method to ensure accurate synchronization across multiple camera streams. As someone who often explores the intersection of technology and creativity, developing QSynch was an incredibly rewarding experience, highlighting the potential that such cross-disciplinary applications can hold.</p>                </article>
@@ -89,23 +91,6 @@
                 </ol><!-- /#posts-list -->
                 </section><!-- /#content -->
         <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                            <li><a href="https://www.python.org/">Python.org</a></li>
-                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
         </section><!-- /#extras -->
 
         <footer id="contentinfo" class="body">
