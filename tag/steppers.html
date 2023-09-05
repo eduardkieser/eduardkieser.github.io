@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>EduardKieser.GitHub.io - steppers</title>
+        <link rel="stylesheet" href="https://eduardkieser.github.io/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://eduardkieser.github.io/">EduardKieser.GitHub.io</a></h1>
+                <nav><ul>
+                    <li><a href="https://eduardkieser.github.io/pages/about.html">About</a></li>
+                    <li><a href="https://eduardkieser.github.io//">Home</a></li>
+                    <li><a href="https://eduardkieser.github.io/category/future-projects.html">Future Projects</a></li>
+                    <li><a href="https://eduardkieser.github.io/category/past-projects.html">Past Projects</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="https://eduardkieser.github.io/CNC.html">My journey with CNC machines</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2023-06-30T00:00:00+02:00">
+                Published: Fri 30 June 2023
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="https://eduardkieser.github.io/author/eduard.html">Eduard</a>
+        </address>
+<p>In <a href="https://eduardkieser.github.io/category/past-projects.html">Past Projects</a>.</p>
+<p>tags: <a href="https://eduardkieser.github.io/tag/cnc-router.html">CNC router</a> <a href="https://eduardkieser.github.io/tag/steppers.html">steppers</a> <a href="https://eduardkieser.github.io/tag/mach3.html">mach3</a> <a href="https://eduardkieser.github.io/tag/grbl.html">GRBL</a> <a href="https://eduardkieser.github.io/tag/wire-cutter.html">wire-cutter</a> </p>
+</footer><!-- /.post-info --><h1>My Journey with CNC Machines</h1>
+<h2>Version 1</h2>
+<p>I was about 15 when I got frustrated with the repetitiveness of cutting ribs for my RC planes by hand. After some negotiations with the parents I was able to acquire a 3 axis nema 23 stepper kit from ali-express and I was off to the races. My first CNC machine was designed in autodesk inventor and drew heavily from other projects that I had seen online. Ball screws and linear rails at the time were still prohibitively expensive, so the machine used bearings that ran on aluminum extrusions. The original spindle was a clonky Ryoby router, which was replaced after a while with a custom brushless spindle. The machine was limited mostly to foam, ply wood and thin pieces of aluminum, but it worked. CamBam and linuxCNC rounded out my software stack.</p>
+<p><img alt="" src="images/cncV1_1.jpeg"></p>
+<p>It's currently at my dad's place and I'm told, still in regular service.</p>
+<h2>Version 2</h2>
+<p>I was half way through grad school when that familiar itch started to trouble me again. I needed more cutting area and by this time I felt that I had enough experience using the old machine to try something a little more unusual.<br>
+I decided on a folded sheet-metal design and from some unknown reason decided to build the whole machine from 5mm 305 stainless steel (I've since come to regret that decision).<br>
+The part that is a little unusual is the fact that it's a gantry design, but with a flat gantry as apposed the the upright gantry that you see on 99% of machines. </p>
+<p><img alt="&quot;The OG&quot;" src="images/cncV2_1.png"></p>
+<p>The machine was again designed in Inventor and a local sheet-metal fabrication place cut and bent the parts for me. The assembly and setup took place in small bursts over 2 years as the machine moved with me from my single room in a student house, to my friends garage to my girlfriend's (now wife's) loft.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="images/cncV2_3.png"></td>
+<td><img alt="" src="images/cncV2_2.png"></td>
+<td><img alt="" src="images/cncV2_4.png"></td>
+</tr>
+</tbody>
+</table>
+<p>The machine has a respectable cutting volume of roughly 900mm x 600mm x 150 mm and a 1.5 kW air cooled spindle with an ER 11 collet. I also wanted do ditch the 25pin connector in order to run it off a laptop, so I used a arduino running GRBL to control the steppers. It was also rigid and reliable, what more could I want?</p>
+<h2>Version 3</h2>
+<p>While idly scrolling through the classifieds one fateful sunday morning, I came across an absurdly well priced 6090 machine that was for sale less than 1km from my house! By that evening the money had been transferred, I then had to figure out how to get the thing to my house. I ended up using a machinery moving company that added 20% to the acquisition cost, but at the time there was no other way.  </p>
+<p><img alt="&quot;looks kind of small from this angle&quot;" src="images/cncV3_1.png"></p>
+<p>I sold the V2, and for a long time all was well. Then we decided to move... I wasn't going to fork out that sort of cash again and this time the trip would be about 65km. The eventual solution involved buying a hydraulic engine crane and renting a motorbike trailer. Everything was theoretically within spec, but the trailer we rended had put in some hard yards and mountain pass was long and winding. I was in the car behind, the right wheel of the trailer was at an angle, and I could swear that it was getting worse. Luckily we made it to our destination without spilling our payload onto the mountain pass and the machine is now comfortable and productive in it's new home.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="" src="images/cncV3_2.png"></td>
+<td><img alt="" src="images/cncV3_4.png"></td>
+<td><img alt="" src="images/cncV3_5.png"></td>
+</tr>
+</tbody>
+</table>
+<h2>The WireCutter</h2>
+<p>The wire cutter is a bit of an odd one out on this list, but it's technically a CNC machine so I'm adding it.<br>
+My original plan was to use 2 ODrives and 4 BLDC motors to control the wire cutter, but the encoder integration over SPI was a huge pain. I eventually learned that the ODrive I was using was broken, but by that time I was already to deep into the easy and inexpensive world of steppers. </p>
+<p><img alt="&quot;BLDC configuration&quot;" src="images/cncWire_1.png"></p>
+<p>The wire cutter is unique as far as I know in that it uses a combination of electric motor and main spring to keep the wire tensioned. I'm still figuring out the best combination of free software to gain all  the functionality that I need.</p>
+<p><img alt="&quot;Tensioning Mechanism&quot;" src="images/cncWire_2.png"></p>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

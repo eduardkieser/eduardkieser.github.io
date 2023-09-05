@@ -28,7 +28,7 @@
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="https://eduardkieser.github.io/author/chatgpt-eduard.html">ChatGPT, Eduard</a>
+                By                         <a class="url fn" href="https://eduardkieser.github.io/author/eduard.html">Eduard</a>
         </address>
 <p>In <a href="https://eduardkieser.github.io/category/past-projects.html">Past Projects</a>.</p>
 <p>tags: <a href="https://eduardkieser.github.io/tag/app.html">App</a> <a href="https://eduardkieser.github.io/tag/flutter.html">Flutter</a> <a href="https://eduardkieser.github.io/tag/camera.html">Camera</a> <a href="https://eduardkieser.github.io/tag/synchronization.html">Synchronization</a> <a href="https://eduardkieser.github.io/tag/qr-code.html">QR Code</a> </p>
@@ -36,7 +36,6 @@
 <p>The concept behind QSynch is straightforward. It leverages QR codes to embed timestamp information directly into the video stream. The app displays the current UTC timestamp as a QR code on the screen, and the operator presents this to each camera before and after a filming session. This action imprints a timestamp onto the video feed, which can be automatically detected and utilized during post-processing to align the various video streams accurately.</p>
 <p>The gif below shows two versions of the app running on my laptop. On the left we encode only the time stamp, in the right we have a version of the app that lets you define an arbitrary amount of key value pairs, that also get embedded into the video stream, this is part of my never ending battle against clip boards in the field. </p>
 <p><img alt="&quot;Alt message&quot;" src="images/qs_1.gif">   </p>
-<p><img alt="" src="images/icu_mon_1.jpg"></p>
 <p>This pre-and-post session timestamping also offers another advantage - it allows us to compensate for any time drift that might occur during filming. With traditional methods, a slight drift in the internal clocks of different cameras can lead to synchronization issues over a long shooting period. With QSynch, since the time is logged at both the start and end, any such drift can be accounted for and adjusted in post-processing.</p>
 <p>The QSynch app is quick and efficient, with its performance mostly limited by the frame-rate of the cameras involved. It offers a solution that not only simplifies the task of video synchronization but also enhances the precision of the process.</p>
 <p>In summary, QSynch exemplifies how a straightforward solution can tackle a complex problem. By integrating QR codes with Flutter, the app provides an elegant, automatic method to ensure accurate synchronization across multiple camera streams. As someone who often explores the intersection of technology and creativity, developing QSynch was an incredibly rewarding experience, highlighting the potential that such cross-disciplinary applications can hold.</p>                </article>
