@@ -16,7 +16,9 @@
                     <li><a href="https://eduardkieser.github.io//">Home</a></li>
                     <li><a href="https://eduardkieser.github.io/category/future-projects.html">Future Projects</a></li>
                     <li><a href="https://eduardkieser.github.io/category/past-projects.html">Past Projects</a></li>
+                    <li><a href="https://eduardkieser.github.io/category/profile.html">Profile</a></li>
                     <li><a href="https://eduardkieser.github.io/category/publications.html">Publications</a></li>
+                    <li><a href="https://eduardkieser.github.io/category/resume.html">Resume</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
@@ -44,9 +46,9 @@
 <p><img alt="The first random sketch" src="images/herb_jet_01.png"></p>
 <p>The plan is to build a commercially viable product, therefore the important metrics are cost, speed and accuracy.</p>
 <ol>
-<li>The sprayer. Yes we will still use herbicide. In a world where lasers and mechanical tillers are gaining acceptance it seems somewhat backwards to use herbicide, however when it comes to speed, a relay activated nozzle array really can't be beat (at least at this scale, at the moment). So yes, we will use a nozzle array and try to get superintendents to use 5 units of herbicide where they might once have used 100 units. It's not 0, but its a big win.  </li>
-<li>The vision system. As stated above, this is likely to be the bottleneck in our system i.t.o. speed so it makes sense to give this some attention. If we use a AGX orin with a single 5MP camera with a field of view of around 1.25m * 1m one would get an effective resolution of around 2 $px/mm$, which should be enough to identify very young weeds. If we specify a frame overlap of 50% we should be able to move at a very respectable 3m/s and have the identification computation done before the nozzle array hits the weeds. For a 1.2m wide vehicle that would translate to 3.6 $m^2/s$. If we allow significant overlap that comes down to around 2.5 $m^2/s$, or just under 1 $hectare/hr$</li>
-<li>The preliminary drive system will comfortably manage the requisite 3 $m/s$ and have a 2 hr runtime, however this figure is more <em>academic</em>, the system will be scaled such that the battery will be replaced when the tanks are refilled, but these are likely starting values.</li>
+<li>The sprayer. Yes we will still use herbicide. In a world where lasers and mechanical tillers are gaining acceptance it seems somewhat backwards to use herbicide, however when it comes to speed, a relay activated nozzle array really can't be beat (at least at this scale, at the moment). So yes, we will use a nozzle array and try to get caretakers to use 5 units of herbicide where they might once have used 100 units. It's not 0, but its a big win.  </li>
+<li>The vision system. As stated above, this is likely to be the bottleneck in our system i.t.o. speed so it makes sense to give this some attention. If we use a AGX orin with a single 5MP camera with a field of view of around 1.25m * 1m one would get an effective resolution of around 2 px/mm, which should be enough to identify very young weeds. If we specify a frame overlap of 50% we should be able to move at a very respectable 3m/s and have the identification computation done before the nozzle array hits the weeds. For a 1.2m wide vehicle that would translate to 3.6 m^2/s. If we allow significant overlap that comes down to around 2.5 m^2/s, or just under 1 hectare/hr</li>
+<li>The preliminary drive system will comfortably manage the requisite 3 m/s and have a 2 hr runtime, however this figure is more <em>academic</em>, the system will be scaled such that the battery will be replaced when the tanks are refilled, but these are likely starting values.</li>
 </ol>
 <h2>Cost and Performance</h2>
 <p>The preliminary BOM puts the vehicle cost close to $15k, which is a hefty tag. However the ability to precisely weed around one hectare of turf per hour might make it worth it.</p>
